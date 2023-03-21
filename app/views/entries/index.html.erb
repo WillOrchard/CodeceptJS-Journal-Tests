@@ -1,0 +1,47 @@
+<%= stylesheet_link_tag "styles.css" %>
+
+
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+.wrapper {
+  white-space: nowrap;
+}
+.box1, .box2 {
+  display: inline-block;
+  width: 35%;
+  height: 250px;
+}
+</style>
+<br>
+<h1>Dashboard</h1>
+<br>
+
+<div class="wrapper">
+  <div class="box1">
+    <a href="<%= solirius_resources_path %>">
+      <div class="solirius-link">
+      </div>
+    </a>
+    <p>Solirius Resources</p>
+  </div>
+</div>
+<br>
+<div class="wrapper">
+  <div class="box1">
+    <a href="<%= useful_websites_path %>">
+      <div class="websites-link">
+      </div>
+    </a>
+    <p>Useful Websites</p>
+  </div>
+  <div class="box2">
+    <a href="<%= coding_resources_path %>">
+      <div class="coding-link">
+      </div>
+    </a>
+    <p>Coding Resources</p>
+  </div>
+</div>
+
