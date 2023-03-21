@@ -11,4 +11,4 @@ COPY . .
 
 RUN npm install
 
-CMD ["/app/docker/run-tests.sh"]
+CMD ["/docker/run-tests.sh"]
