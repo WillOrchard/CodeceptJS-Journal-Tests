@@ -1,12 +1,16 @@
-const { ArtifactArchiver } = require('@serenity-js/core');
-const { ConsoleReporter } = require('@serenity-js/console-reporter');
-const { SerenityBDDReporter } = require('@serenity-js/serenity-bdd');
+const { configure } = require('@serenity-js/core');
+const { ConsoleReporter, SerenityBDDReporter } = require('@serenity-js/core/reporter');
+const { mocha } = require('@serenity-js/mocha');
 
-exports.config = {
+configure({
+    // Use Mocha test runner
+    runner: mocha(),
+    
+    // Use Console and HTML reporter
     crew: [
-        ArtifactArchiver.storingArtifactsAt('./target/site/serenity'),
-        new ConsoleReporter(),
+        ConsoleReporter.withDefaultColourSupport(),
         new SerenityBDDReporter(),
     ],
-    outputDir: './target/site/serenity',
-};
+    
+    // Other configuration options here...
+});
