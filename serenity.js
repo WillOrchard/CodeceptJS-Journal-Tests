@@ -1,5 +1,6 @@
 const { configure } = require('@serenity-js/core');
-const { ConsoleReporter, SerenityBDDReporter } = require('@serenity-js/core/reporter');
+const { SerenityBDDReporter } = require('@serenity-js/serenity-bdd');
+const { ConsoleReporter } = require('@serenity-js/console-reporter');
 const { mocha } = require('@serenity-js/mocha');
 
 configure({
