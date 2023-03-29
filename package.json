@@ -25,9 +25,11 @@
         "@serenity-js/assertions": "^3.0.1",
         "@serenity-js/console-reporter": "^3.0.1",
         "@serenity-js/core": "^3.0.1",
+        "@serenity-js/mocha": "^3.0.1",
         "@serenity-js/rest": "^3.0.1",
         "@serenity-js/serenity-bdd": "^3.0.1",
         "codeceptjs": "^3.4.1",
+        "mocha": "^10.2.0",
         "playwright": "^1.31.2"
     }
 }
