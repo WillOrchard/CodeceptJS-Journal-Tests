@@ -26,5 +26,16 @@ exports.config = {
     functionsPage: "./pages/functions.js"
   },
   
-  name: 'Journal'
+  name: 'Journal',
+
+  plugins: {
+
+    serenity: {
+      require: '@serenity-js/mocha',
+
+      outputDir: './reports',
+
+      target: 'Chrome',
+    },
+  },
 };
