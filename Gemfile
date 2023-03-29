@@ -25,6 +25,7 @@ gem 'bootstrap', '~> 5.2', '>= 5.2.3'
 gem "font-awesome-sass", "~> 6.3.0"
 gem "rails_autolink", "~> 1.1.8"
 gem 'bcrypt', '~> 3.1.7'
+gem 'serenity'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

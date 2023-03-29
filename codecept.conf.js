@@ -26,5 +26,27 @@ exports.config = {
     functionsPage: "./pages/functions.js"
   },
   
-  name: 'Journal'
-}
+  name: 'Journal',
+
+  plugins: {
+    serenity: {
+      enabled: true,
+      stageCueTimeout: 30 * 1000,
+      crew: [
+        // ... any additional crew members ...
+        CrewBuilder.serenityBDDReporter(),
+      ],
+    },
+  },
+
+  mocha: {
+    reporterOptions: {
+      'codeceptjs-cli-reporter': {
+        stdout: '-',
+        options: {
+          steps: true,
+        },
+      },
+    },
+  },
+};

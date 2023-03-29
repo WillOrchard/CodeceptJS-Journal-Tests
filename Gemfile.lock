@@ -187,6 +187,7 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    serenity (0.0.2)
     spring (4.1.1)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
@@ -238,6 +239,7 @@ DEPENDENCIES
   rails_autolink (~> 1.1.8)
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
+  serenity
   spring
   turbolinks (~> 5)
   tzinfo-data
