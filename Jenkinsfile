@@ -11,12 +11,8 @@ pipeline {
         }
         stage('CodeceptJS Tests') {
             steps {
-                sh 'npx codeceptjs run --plugins serenity'
-            }
-            post {                
-                success {
-                   publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: './reports', reportFiles: 'index.html', reportName: 'Serenity Report', reportTitles: '', useWrapperFileDirectly: true])     
-                }
+                sh 'npm ci'
+                sh 'npx codeceptjs run --config serenity.conf.js'
             }
         }
         stage('Pa11y Tests') {
@@ -25,4 +21,9 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            archiveArtifacts artifacts: 'reports/**/*.html', fingerprint: true
+            }
+        }
 }
