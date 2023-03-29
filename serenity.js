@@ -5,7 +5,6 @@ const { mocha } = require('@serenity-js/mocha');
 
 configure({
     // Use Mocha test runner
-    runner: mocha(),
     
     // Use Console and HTML reporter
     crew: [
