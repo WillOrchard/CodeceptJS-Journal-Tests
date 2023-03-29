@@ -16,7 +16,25 @@ pipeline {
         }
         stage('Pa11y Tests') {
             steps {
-                sh 'node pa11y-test.js'
+                sh 'pa11y-ci --reporter html > pa11y-report.html'
+            }
+        }
+        stage('Publish integration test results') {
+            steps {
+                junit 'output/result.xml'
+            }
+        }
+        stage('Publish accessibility test results') {
+            steps {
+                publishHTML([
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: '.',
+                    reportFiles: 'pa11y-report.html',
+                    reportName: 'Pa11y Accessibility Report',
+                    reportTitles: 'Pa11y Report'
+                ])
             }
         }
     }
