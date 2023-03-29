@@ -11,7 +11,7 @@ pipeline {
         }
         stage('CodeceptJS Tests') {
             steps {
-                sh './node_modules/.bin/codeceptjs run'
+                sh 'npx codeceptjs run'
             }
             post {                
                 success {
