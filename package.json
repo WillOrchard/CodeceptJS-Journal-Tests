@@ -26,6 +26,7 @@
         "@serenity-js/console-reporter": "^3.0.1",
         "@serenity-js/core": "^3.0.1",
         "@serenity-js/cucumber": "^3.0.1",
+        "@serenity-js/jasmine": "^3.0.1",
         "@serenity-js/local-server": "^3.0.1",
         "@serenity-js/mocha": "^3.0.1",
         "@serenity-js/rest": "^3.0.1",
@@ -33,6 +34,8 @@
         "cli": "^1.0.1",
         "codeceptjs": "^3.4.1",
         "mocha": "^10.2.0",
+        "mocha-allure-reporter": "^1.4.0",
+        "mocha-junit-reporter": "^2.2.0",
         "playwright": "^1.31.2",
         "serenity-cli": "^0.11.3",
         "serenity-js": "^1.10.14"

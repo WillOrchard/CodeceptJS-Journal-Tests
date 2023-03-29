@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="12.068" tests="7" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-03-29T16:22:10" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Happy path tests" timestamp="2023-03-29T16:22:10" tests="5" file="/Users/soliriusadmin169/Desktop/Grad Training App/ruby-grad-trai-master/Journal/HappyPath_test.js" time="9.257" failures="0">
+    <testcase name="Happy path tests: test the login form" time="1.410" classname="test the login form">
+    </testcase>
+    <testcase name="Happy path tests: create new entry" time="2.067" classname="create new entry">
+    </testcase>
+    <testcase name="Happy path tests: edit entry" time="1.926" classname="edit entry">
+    </testcase>
+    <testcase name="Happy path tests: delete entry" time="1.355" classname="delete entry">
+    </testcase>
+    <testcase name="Happy path tests: logout button" time="1.198" classname="logout button">
+    </testcase>
+  </testsuite>
+  <testsuite name="Unhappy path tests" timestamp="2023-03-29T16:22:19" tests="2" file="/Users/soliriusadmin169/Desktop/Grad Training App/ruby-grad-trai-master/Journal/UnhappyPath_test.js" time="2.811" failures="0">
+    <testcase name="Unhappy path tests: invalid login" time="1.065" classname="invalid login">
+    </testcase>
+    <testcase name="Unhappy path tests: create blank entry" time="1.342" classname="create blank entry">
+    </testcase>
+  </testsuite>
+</testsuites>
