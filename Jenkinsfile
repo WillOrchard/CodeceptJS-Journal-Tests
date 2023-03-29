@@ -7,7 +7,6 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm install pa11y'
-                sh 'npx serenity install'
             }
         }
         stage('CodeceptJS Tests') {
