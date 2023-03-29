@@ -11,8 +11,7 @@ pipeline {
         }
         stage('CodeceptJS Tests') {
             steps {
-                sh 'npm ci'
-                sh 'npx codeceptjs run --config serenity.conf.js'
+                sh 'npx codeceptjs run'
             }
         }
         stage('Pa11y Tests') {
@@ -21,9 +20,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            archiveArtifacts artifacts: 'reports/**/*.html', fingerprint: true
-            }
-        }
 }
