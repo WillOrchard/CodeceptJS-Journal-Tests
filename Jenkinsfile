@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Pa11y Tests') {
             steps {
-                sh 'pa11y-ci --reporter html > pa11y-report.html'
+                sh 'npx pa11y-ci --reporter html > pa11y-report.html'
             }
         }
         stage('Publish integration test results') {
