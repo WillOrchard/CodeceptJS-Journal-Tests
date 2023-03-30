@@ -11,7 +11,8 @@
         "set field #username to WillOrchard",
         "set field #password to password",
         "click element .btn-outline-dark[name='submit']",
-        "wait for url to be http://127.0.0.1:3000/"
+        "wait for url to be http://127.0.0.1:3000/",
+        "navigate to http://localhost:3000/entries/new"
       ]
     },
     {
@@ -21,7 +22,8 @@
         "set field #username to WillOrchard",
         "set field #password to password",
         "click element .btn-outline-dark[name='submit']",
-        "wait for url to be http://127.0.0.1:3000/"
+        "wait for url to be http://127.0.0.1:3000/",
+        "navigate to http://localhost:3000/coding_resources"
       ]
     },
     {
@@ -31,7 +33,8 @@
         "set field #username to WillOrchard",
         "set field #password to password",
         "click element .btn-outline-dark[name='submit']",
-        "wait for url to be http://127.0.0.1:3000/"
+        "wait for url to be http://127.0.0.1:3000/",
+        "navigate to http://localhost:3000/entries/53/edit"
       ]
     }
   ],
