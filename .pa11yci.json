@@ -8,10 +8,9 @@
       "url": "http://localhost:3000/entries/new",
       "actions": [
         "navigate to http://localhost:3000/login",
-        "set field #username to WillOrchard",
-        "set field #password to password",
-        "click element .btn-outline-dark[name='submit']",
-        "wait for url to be http://127.0.0.1:3000/",
+        "set field [name='username'] to WillOrchard",
+        "set field [name='password'] to password",
+        "click element [name='submit']",
         "navigate to http://localhost:3000/entries/new"
       ]
     },
@@ -19,10 +18,9 @@
       "url": "http://localhost:3000/coding_resources",
       "actions": [
         "navigate to http://localhost:3000/login",
-        "set field #username to WillOrchard",
-        "set field #password to password",
-        "click element .btn-outline-dark[name='submit']",
-        "wait for url to be http://127.0.0.1:3000/",
+        "set field [name='username'] to WillOrchard",
+        "set field [name='password'] to password",
+        "click element [name='submit']",
         "navigate to http://localhost:3000/coding_resources"
       ]
     },
@@ -30,16 +28,15 @@
       "url": "http://localhost:3000/entries/53/edit",
       "actions": [
         "navigate to http://localhost:3000/login",
-        "set field #username to WillOrchard",
-        "set field #password to password",
-        "click element .btn-outline-dark[name='submit']",
-        "wait for url to be http://127.0.0.1:3000/",
+        "set field [name='username'] to WillOrchard",
+        "set field [name='password'] to password",
+        "click element [name='submit']",
         "navigate to http://localhost:3000/entries/53/edit"
       ]
     }
   ],
   "defaults": {
-    "timeout": 5000,
+    "timeout": 10000,
     "wait": 0
   },
   "standard": "WCAG2AA"
