@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>
-		Pa11y results for "http://localhost:3000/login"
+		Pa11y results for "http://localhost:3000/entries/53/edit"
 	</title>
 	<style>
 		html, body {
@@ -243,7 +243,7 @@
 
 <body>
 	<main>
-		<h1>Pa11y results for "http://localhost:3000/login"</h1>
+		<h1>Pa11y results for "http://localhost:3000/entries/53/edit"</h1>
 		<h2>Generated at: Thu Mar 30 2023 12:42:48 GMT+0100 (British Summer Time)</h2>
 		<h2>Runners (with issues): htmlcs</h2>
 
@@ -251,7 +251,7 @@
 			<span class="label">Toggle by type</span>
 			<span class="count error" id="error-count" tabindex="0" role="button" aria-label="Toggle errors">
 				<span class="left-bar" aria-hidden="true"></span>
-				<span class="body">1 errors</span>
+				<span class="body">6 errors</span>
 			</span>
 			<span class="count warning" id="warning-count" tabindex="0" role="button" aria-label="Toggle warnings">
 				<span class="left-bar" aria-hidden="true"></span>
@@ -268,6 +268,31 @@
 				<div class="body">
 					<h3><strong>Error</strong>: The html element should have a lang or xml:lang attribute which describes the language of the document.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc3_1_1">htmlcs: WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2</a></p><p class="context">&lt;html&gt;&lt;head&gt;
     &lt;title&gt;Journal&lt;/titl...&lt;/html&gt;</p><p class="selector">(selector "html")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute &quot;submit&quot; or &quot;image&quot;, or BUTTON elements with type &quot;submit&quot; or omitted/invalid.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc3_2_2">htmlcs: WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2</a></p><p class="context">&lt;form action&#x3D;&quot;/entries&quot; accept-charset&#x3D;&quot;UTF-8&quot; method&#x3D;&quot;post&quot;&gt;&lt;input type&#x3D;&quot;hidden&quot; name&#x3D;&quot;_met...&lt;/form&gt;</p><p class="selector">(selector "html &gt; body &gt; form:nth-child(7)")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name</a></p><p class="context">&lt;input size&#x3D;&quot;25&quot; type&#x3D;&quot;text&quot; value&#x3D;&quot;https://realpython.com/tutorials/projects/&quot; name&#x3D;&quot;entry[link]&quot; id&#x3D;&quot;entry_link&quot;&gt;</p><p class="selector">(selector "#entry_link")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This form field should be labelled in some way. Use the label element (either with a &quot;for&quot; attribute or wrapped around the form field), or &quot;title&quot;, &quot;aria-label&quot; or &quot;aria-labelledby&quot; attributes as appropriate.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.F68</a></p><p class="context">&lt;input size&#x3D;&quot;25&quot; type&#x3D;&quot;text&quot; value&#x3D;&quot;https://realpython.com/tutorials/projects/&quot; name&#x3D;&quot;entry[link]&quot; id&#x3D;&quot;entry_link&quot;&gt;</p><p class="selector">(selector "#entry_link")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This select element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc4_1_2">htmlcs: WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Select.Name</a></p><p class="context">&lt;select id&#x3D;&quot;select_id&quot; name&#x3D;&quot;entry[category]&quot;&gt;&lt;option value&#x3D;&quot;Solirius Resourc...&lt;/select&gt;</p><p class="selector">(selector "#select_id")</p></div>
+			</li>
+			<li class="issue error">
+				<div class="left-bar" aria-hidden="true"></div>
+				<div class="body">
+					<h3><strong>Error</strong>: This form field should be labelled in some way. Use the label element (either with a &quot;for&quot; attribute or wrapped around the form field), or &quot;title&quot;, &quot;aria-label&quot; or &quot;aria-labelledby&quot; attributes as appropriate.</h3><p><a href="https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/#sc1_3_1">htmlcs: WCAG2AA.Principle1.Guideline1_3.1_3_1.F68</a></p><p class="context">&lt;select id&#x3D;&quot;select_id&quot; name&#x3D;&quot;entry[category]&quot;&gt;&lt;option value&#x3D;&quot;Solirius Resourc...&lt;/select&gt;</p><p class="selector">(selector "#select_id")</p></div>
 			</li>
 		</ul>
 	</main>
