@@ -7,6 +7,7 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm install pa11y'
+                sh 'npm ci'
             }
         }
         stage('CodeceptJS Tests') {
@@ -14,9 +15,9 @@ pipeline {
                 sh 'npx codeceptjs run'
             }
         }
-        stage('Pa11y Tests') {
+        stage('Run Pa11y Tests') {
             steps {
-                sh 'npx pa11y-ci --reporter html > pa11y-report.html'
+                sh 'npx pa11y-ci --config .pa11yci.json --reporter html > pa11y-report.html'
             }
         }
         stage('Publish integration test results') {
@@ -24,17 +25,9 @@ pipeline {
                 junit 'output/result.xml'
             }
         }
-        stage('Publish accessibility test results') {
+        stage('Publish Pa11y report') {
             steps {
-                publishHTML([
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: '.',
-                    reportFiles: 'pa11y-report.html',
-                    reportName: 'Pa11y Accessibility Report',
-                    reportTitles: 'Pa11y Report'
-                ])
+                archiveArtifacts 'pa11y-report.html'
             }
         }
     }
