@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Run Pa11y Tests') {
             steps {
-                sh 'npx pa11y-ci --config .pa11yci.json --reporter ./node_modules/pa11y-ci-reporter-html > pa11y-report.html'
+                sh 'npx pa11y-ci --config .pa11yci.json --reporter pa11y-ci-reporter-html > pa11y-report.html'
             }
         }
         stage('Publish integration test results') {
