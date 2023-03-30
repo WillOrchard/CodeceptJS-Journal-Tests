@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Run Pa11y Tests') {
             steps {
-                sh 'npx pa11y-ci --config .pa11yci.json --reporter pa11y-ci-reporter-html || true'
+                sh 'npx pa11y-ci --config .pa11yci.json || true'
             }
             post {
                 always {
